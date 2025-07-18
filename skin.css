@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 * {
   margin: 30;
   padding: 30;
@@ -375,3 +376,113 @@ footer {
 .more-btn:hover {
   background-color: #00c5e0;
 }
+
+/* Project Section */
+.projects {
+  padding: 50px 10%;
+  background-color: #0f0f0f;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 200px;
+}
+
+.projects .highlight {
+  color: #00f0ff;
+}
+
+/* Timeline Layout */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+/* Timeline Item Style */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.timeline-item.left {
+  flex-direction: row;
+}
+
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+
+.timeline-item img {
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(0 0 15px #00ffe0);
+  border-radius: 10px;
+}
+.timeline-item.left .content {
+  margin-left: -150px; /* Push text inward from center line */
+}
+
+.timeline-item.right .content {
+  margin-right: -150px; /* Push text inward from right */
+}
+
+/* Optional: move image further right/left */
+.timeline-item.left img {
+  margin-right: -50px;
+}
+
+.timeline-item.right img {
+  margin-left: -50px;
+}
+
+/* Text Content of each project */
+/* TEXT BOX */
+.timeline-item .content {
+  flex: 1;
+  max-width: 500px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.timeline-item .content h2 {
+  font-size: 2rem;
+  color: #00f0ff;
+  margin-bottom: 10px;
+}
+
+.timeline-item .content p {
+  color: #d0fefe;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin: auto;
+  max-width: 1000px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.projects {
+  position: relative;
+}
+
+
