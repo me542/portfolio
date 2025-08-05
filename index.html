@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="skin.css" />
-  <script src="javas.js" defer></script>
+  <!-- <script src="javas.js" defer></script> -->
 </head>
 <body>
   <header>
-    <div class="logo">Niv's</div>
+  <div class="logo">Niv's</div>
     <nav>
-      <a href="index.html" target="_self">Home</a>
-      <a href="about.html" target="_self">About</a>
-      <a href="service.html" target="_self">Service</a>
-      <a href="project.html" target="_self">Project</a>
-      <a href="contact.html" target="_self">Contact</a>
+      <a href="#hero">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#services-section">Service</a>
+      <a href="#projects">Project</a>
+      <a href="#contact-section">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <section class="hero">
+  <section id ="hero">
     <div class="content">
       <h3>Hello, It's Me</h3>
       <h1>Flor, Reyvin F.</h1>
@@ -39,5 +39,128 @@
       <img src="assest/enhcd-1150.png" alt="Reyvin Flor" />
     </div>
   </section>
+
+  <section id ="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="assest/enhcd-1150.png" alt="Reyvin Flor" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I am Reyvin Flor, a passionate Computer Engineering graduate with a strong foundation in both hardware and software integration. I love working on innovative projects that challenge my creativity and technical skills.
+        </p>
+        <p>
+          I specialize in building embedded systems, IoT applications, and crafting clean, efficient code. I'm enthusiastic about continuous learning and using technology to solve real-world problems.
+        </p>
+        <p>
+          Outside tech, I enjoy design, tinkering with electronics, and sharing ideas with like-minded innovators.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id ="services-section">
+    <h1>Our <span class="highlight">Services</span></h1>
+
+    <div class="services-container">
+      <div class="service-card">
+        <img src="assest/FE.png" alt="Front End" class="service-img" />
+        <h2>Front End</h2>
+        <p>
+          Building responsive websites and user-friendly web or mobile
+          applications using modern front end technologies.
+        </p>
+        <button>Read More</button>
+      </div>
+
+      <div class="service-card">
+        <img src="assest/PB.png" alt="Graphic Design" class="service-img" />
+        <h2>Graphic Design</h2>
+        <p>
+          Offering design solutions such as logos, posters, social media graphics, and brand assets.
+        </p>
+        <button>Read More</button>
+      </div>
+
+      <div class="service-card">
+        <img src="assest/pencil.png" alt="Illustration" class="service-img" />
+        <h2>Illustration</h2>
+        <p>
+          Providing custom illustrations for branding, stories, characters, and digital content.
+        </p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="more-btn-container">
+      <button class="more-btn">More</button>
+    </div>
+  </section>
+
+  <section id ="projects">
+  <h1><span class="highlight">Projects</span></h1>
+  
+  <div class="timeline">
+
+        <div class="timeline-item left">
+        <div class="content">
+            <h2>AquaMansi: Device</h2>
+            <p>           Is an Arduino-based automated watering system designed to efficiently manage plant care. It uses soil moisture sensors to detect when plants need water, a real-time clock (RTC) to schedule irrigation, an SD card module to log data, and an LCD display to show current system status. A servo motor controls the water flow, while an ESP  module enables wireless communication with the app. This device ensures that plants are only watered when necessary, promoting healthy growth and reducing water waste</p>
+        </div>
+        <img src="assest/1.png" alt="AquaMansi Device">
+        </div>
+
+        <div class="timeline-item right">
+        <div class="content">
+            <h2>AquaMansi: App</h2>
+            <p>             A mobile application that provides users with real-time access to their system. Through the app, users can monitor soil moisture levels, view watering history, receive alerts, manually activate the irrigation system, and configure settings remotely. With its intuitive interface and seamless connection to the device, the Aquamansi App empowers users to maintain optimal plant care even when they’re not at home.</p>
+        </div>
+        <img src="assest/2.png" alt="AquaMansi App">
+        </div>
+
+        <div class="timeline-item left">
+        <div class="content">
+            <h2>Itemize</h2>
+            <p>                 Itemize is a user-friendly eCommerce platform that connects buyers and sellers. It allows users to easily browse and purchase products, while sellers can manage listings, track orders, and monitor sales. With secure payments and real-time updates, Itemize makes online shopping simple and reliable. This app will be further enhanced and improved during my internship experience.</p>
+        </div>
+        <img src="assest/3.png" alt="Itemize App">
+        </div>
+
+        <div class="timeline-item right">
+        <div class="content">
+            <h2>Sweep</h2>
+            <p>                 A Commission is an IoT-based monitoring system designed to track both waste level and water level in real time. Built with smart sensors and microcontrollers, the device automatically detects when a trash bin is full or when a water container reaches a certain level. The data is transmitted wirelessly, allowing users to receive alerts, monitor status remotely, and make timely decisions whether for efficient waste collection or water resource management.</p>
+        </div>
+        <img src="assest/4.png" alt="Sweep App">
+    </div>
+
+  </div>
+</section>
+
+<section id ="contact-section">
+    <h1>Contact <span class="highlight">Me</span></h1>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <textarea placeholder="Message" rows="10" required></textarea>
+      <button type="submit" class="send-btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/1B33L2iEYK/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" /></a>
+        <a href="https://www.linkedin.com/in/reyvin-flor-7008a1188" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" /></a>
+        <a href="https://github.com/me542" target="_blank">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" /></a>
+    </div>
+  </footer>
+
 </body>
 </html>
